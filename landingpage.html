@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>Landing page</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+nav{
+    display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 70px;
+        
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li{
+    list-style-type:none;
+    margin: 0 23px;
+    
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  nav ul li a:hover{
+    color:#3c6ad5;
+  
+   
+    
+  }
+  .left
+      {
+        font-size: 1.5rem;
+        color: aliceblue;
+      }
+      :root{
+        --primary-color:#00605f;
+        --secondary-color:#017479;
+        --text-dark:#0f172a;
+        --text-light:#94a3b8;
+        --white:#ffffff;
+        --max-width:1400px;
+      }
+    body{
+      font-family: "Sora", sans-serif;
+      background:linear-gradient(to right, rgba(2,82,89,0.9),
+      rgba(255,255,255,0));
+      background-image: url(img/nature_wallpaper_by_zxestep_dfmgeua-414w-2x.jpg);
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+   
+    .fa{
+        color: aliceblue;
+    }
+    
+    .search{
+        width: 100%;
+        max-width: 300px;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items:center;
+        gap:1rem;
+        background-color: var(--white);
+        border-radius: 2rem;
+        transition: 0.3s;
+    }
+    .search input{
+        width:100%;
+        font-size: 1rem;
+        color:var(--primary-color);
+        outline: none;
+        border: none;
+    }
+    .search input::placeholder{
+        color:var(--secondary-color)
+    }
+    .search span{
+        font-size: 1.5rem;
+        color:var(--primary-color);
+    }
+    .login{
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: 600;
+        color:var(--white);
+        background-color: var(--primary-color);
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: 0.3sec;
+
+    }
+    .login:hover{
+        background-color: var(--secondary-color);
+    }
+    .login span{
+        padding:3px 6px;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        background-color: var(--white);
+        border-radius: 100%;
+    }
+    .socials{
+        position: absolute;
+        top:25rem;
+        left:0;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+
+    }
+    .socials::after{
+        position:absolute;
+        content:"";
+        top:-22rem;
+        left:15px;
+        height: 15rem;
+        width: 2px;
+        background-color: var(--white);
+        
+
+    }
+  .socials span{
+    font-size: 2rem;
+    color:var(--white);
+
+  }
+  .content h1{
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-left: 75px;
+}
+.content h1 span{
+    -webkit-text-stroke: 2px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+.content p{
+    max-width: 350px;
+    margin-bottom:2rem;
+    line-height: 1.5rem;
+    color:var(--white);
+    margin-left: 75px;
+}
+.content .btn{
+    padding :.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--white);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    margin-left:75px;
+}
+.btn:hover{
+        background-color: var(--primary-color);
+    }
+    .diffgal{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:1rem;
+        margin-top:130px ;
+    }
+    .difgal_card{
+        height:100%;
+        background-color: var(--white);
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.7);
+
+    }
+    .difgal_card img{
+        width:100%;
+    }
+    .painting_content{
+        padding :1rem;
+
+    }
+    .painting_content h4{
+        margin-bottom:5rem;
+        font-size:1.2rem;
+        font-weight: 600;
+        color: var(--text-dark);
+
+    }
+    .painting_content p{
+        margin-bottom: 1rem;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        color:rgb(71, 66, 66);
+
+    }
+    .painting_content .btn{
+        padding:.5rem;
+        outline:none;
+        border:none;
+        font-weight: 500;
+        color:var(--white);
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+    @media (width < 1200px){
+        .search{
+            max-width: 235px;
+        }
+        .diffgal{
+            grid-template-columns: 1fr;
+         }
+    }
+    @media (width <900px){
+        .nav_links{
+            display:none;
+        }
+        .content h1{
+         font-size: 4rem;
+        }
+        .diffgal{   
+            grid-template-columns: repeat(2, 1fr);
+         }}
+         
+</style>
+<body>
+    <nav>
+        <div class="left"> MY ART GALLERY</div>
+       <div class=right> <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Beginner</a></li>
+            <li><a href="">Intermidiate</a></li>
+            <li><a href="">Artist</a></li>
+            <li><a href="">About </a></li>
+            <li><a href="">Contact</a></li>
+            <div class="search"><input type="text" placeholder="search">
+            <span><i class="ri-search-eye-line"></i></span></div>
+        </ul>
+    </div><div class="login">
+        <span><i class="ri-user-fill"></i></i></span>
+        LOG IN
+    </div>
+
+    </nav>
+    <div class="socials">
+        <span><i class="ri-facebook-fill"></i></span>
+        <span><i class="ri-instagram-line"></i></span>
+        <span><i class="ri-twitter-fill"></i></span>
+        <span><i class="ri-linkedin-fill"></i></span>
+      
+    </div>
+    <div class="content">
+        <h1>EXPLORE THE <br>ART<br>GALLERY</h1>
+        <p>
+            Art galleries are a great way for art lovers to expand their knowledge and experience
+             new types of artwork they have never seen before
+            . Despite being one of life's simple pleasures, 
+            there is actually a reason why people love visiting art galleries - it makes them happier! 
+        </p>
+        <button class="btn">EXPLORE NOW</button>
+    </div>
+    <div class="diffgal">
+        <div class="difgal_card">
+            <img src="img/painting.webp" alt="">
+            <div class="painting_content">
+                <h4>PAINTINGS</h4>
+                <p> painting, the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various ways to produce sensations of volume, space, movement, and light on a flat surface. </p>
+                    <button class="btn">READ MORE</button>
+            </div>
+        </div>
+        <div class="difgal_card">
+            <img id="t" src="img/mandala.jpg" alt="">
+            <div class="painting_content">
+                <h4>MANDALA ARTS</h4>
+                <p> In the ancient Sanskrit language of Hinduism and Buddhism, mandala means “circle.” Traditionally, a mandala is a geometric design or pattern that represents the cosmos or deities in various heavenly worlds. “It's all about finding peace in the symmetry of the design and of the universe,” says artist Saudamini Madra. </p>
+                    <button class="btn">READ MORE</button>
+            </div>
+        </div>
+        <div class="difgal_card">
+            <img src="img/sketch.jpg" alt="">
+            <div class="painting_content">
+                <h4>SKETCHING</h4>
+                <p>A sketch may serve a number of purposes: it might record something that the artist sees, it might record or develop an idea for later use or it might be used as a quick way of graphically demonstrating an image, idea or principle. Sketching is the most inexpensive art medium. Sketches can be made in any drawing medium. </p>
+                    <button class="btn">READ MORE</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      body{
+        background-color: rgb(1, 1, 47);
+        color: blanchedalmond;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(9, 5, 130);
+        
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style-type:none;
+        margin: 0 23px;
+        
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(15, 209, 209);
+        
+      }
+      .lft
+      {
+        font-size: 1.5rem;
+      }
+      .one{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+
+      }
+      .one> div{
+        width: 30%;
+      }
+      .lsection{
+        
+        font-size: 3rem;
+        margin: 30px 0;
+
+      }
+      .rsection img{
+        width: 80%;
+        margin-left: 60px;
+
+      }
+      .nidhi{
+       color: aqua;
+      }
+      #element{
+        color:#32c2ea;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        -webkit-box-reflect:below 1px liner-gradient(transparent,#0004);
+        line-height: 0.70px;
+        outline: none;
+        animation: animate 7s linear infinite;
+      }
+      @keyframes animate{
+        0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,90%{
+          color:#2fc3ec;
+          text-shadow: none;
+        }
+        18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,100%{
+          color:#fff;
+          text-shadow: 0 0 10px #03bcf4,
+          0 0 20px #03bcf4,
+          0 0 30px #03bcf4,
+          0 0 40px #03bcf4,
+          0 0 50px #03bcf4,
+          0 0 60px #03bcf4;
+        }
+      }
+      .two{
+        max-width:80%;
+        margin-bottom: auto;
+        display: flex;
+      }
+      .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn{
+        
+        position: relative;
+        text-align: center;
+        width: 300px;
+        padding: 10px;
+        font-size:25px ;
+        color:#15f4ee;
+        font-family: Poppins;
+        font-weight: 400;
+        border:5px solid #15f4ee;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 100px;
+        transition: 1.5%;
+        margin: 6px;
+
+      }
+      .btn:hover{
+        box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+        0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+        text-shadow: 0 0 5px #15f4ee,0 0 5px #133bef ;
+      }
+      #u{
+        margin-top: 30px;
+      }
+      .ek{
+        border: 2px solid #15f4ee;
+        height:400px;
+        width:600px;
+         margin-top: auto;
+        position: relative;
+        text-align: center;
+        width: 300px;
+        padding: 10px;
+        font-size:25px ;
+        color:#15f4ee;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        border:5px solid #15f4ee;
+        text-transform:none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 100px;
+        transition: 1.5%;
+        margin-left: 300px;
+
+      }
+      .ek:hover{
+        box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+        0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+        text-shadow: 0 0 5px #15f4ee,0 0 5px #133bef ;
+      }
+      .ek>h1{
+        color: #fff;
+        font-size: 15px;
+        justify-content:space-between;
+        margin-bottom:60px ;
+      }
+      .divide{
+        margin-top:60px;
+      }
+      .ek>p{
+        font-size:large;
+      }
+      .red{
+        border: 5px solid #15f4ee ;
+        height:45px;
+        width:120px;
+        margin-top: 20px;
+      }
+      .three{
+        display: flex;
+      }
+      .a{
+        border: 2px solid #15f4ee;
+        height:400px;
+        width:600px;
+        margin-top:30px;
+        position: relative;
+        text-align: center;
+        width: 300px;
+        padding: 10px;
+        font-size:25px ;
+        color:#15f4ee;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        border:5px solid #15f4ee;
+        text-transform:none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 70px;
+        transition: 1.5%;
+        margin-left: 300px;
+      }
+      .b{
+        border: 2px solid #15f4ee;
+        height:400px;
+        width:600px;
+        margin-top:30px;
+        position: relative;
+        text-align: center;
+        width: 300px;
+        padding: 10px;
+        font-size:25px ;
+        color:#15f4ee;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        border:5px solid #15f4ee;
+        text-transform:none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 70px;
+        transition: 1.5%;
+        margin-left: 300px;
+      }
+      .c{
+        border: 2px solid #15f4ee;
+        height:400px;
+        width:600px;
+        margin-top:30px;
+        position: relative;
+        text-align: center;
+        width: 300px;
+        padding: 10px;
+        font-size:25px ;
+        color:#15f4ee;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        border:5px solid #15f4ee;
+        text-transform:none;
+        letter-spacing: 2px;
+        cursor: pointer;
+        border-radius: 70px;
+        transition: 1.5%;
+        margin-left: 300px;
+      }
+      .a:hover{
+        height:400px;
+        width:600px;
+        box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+        0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+      }
+      .b:hover{
+        height:400px;
+        width:600px;
+        box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+        0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+      }
+      .c:hover{
+        height:400px;
+        width:600px;
+        box-shadow: 0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee,
+        0 5px 50px 0 #15f4ee inset,0 5px 50px 0 #15f4ee;
+      }
+      .a h1{
+        color: aliceblue;
+      }
+      .a ul{
+        font-size: large;
+        justify-content: space-around;
+      
+        margin-top: 30px;
+      }
+      .b h1{
+        color: aliceblue;
+      }
+      .b ul{
+        font-size: large;
+        justify-content: space-around;
+       
+        margin-top: 30px;
+      }
+      .four{
+        margin-top: 30px;
+        display: flex;
+
+      }
+      .me{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 35%;
+        min-width: 320px;
+        margin-right: 60px;
+        
+
+      }
+      .leftside h1{
+        position: relative;
+        font-size: 28px;
+        display: inline-block;
+        margin-bottom: 25px;
+
+      }
+      .leftside h1::before{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background-color: #888;
+        top:120%;
+        left:0;
+      }
+      .leftside h1::after{
+        content: '';
+        position: absolute;
+        width:25%;
+        height:3px;
+        background-color: dodgerblue;
+        top:calc(120% - 1px);
+        left:0;
+      }
+      .leftside h1{
+        font-size: 17px;
+        color: #ccc;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        padding-bottom: 22px;
+
+      }
+      .contactinfo{
+        margin-bottom: 16px;
+      }
+      .contactinfo .icongroup{
+        display: flex;
+        align-items: center;
+        margin: 25px 0px;
+      }
+      .icongroup .icon{
+        width: 45px;
+        height: 45px;
+        border: 2px solid dodgerblue;
+        border-radius: 50%;
+        margin-right: 20px;
+        position: relative;
+      }
+      .icongroup .icon i{
+        font-size: 20px;
+        color: #ddd;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+      }
+      .icongroup .details span{
+        display:block;
+        color:#888;
+        font-size:18px;
+      }
+      .icongroup .details span:nth-child(1){
+        text-transform: uppercase;
+        color: #ccc;
+      }
+      .socialmedia{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 22px 0px 20px;
+      }
+      .socialmedia a{
+        width: 35px;
+        height: 35px;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 15px;
+        border-radius: 5px;
+        background-color: dodgerblue;
+        transition: 0.4s;
+      }
+      .socialmedia a i{
+        color: #ddd;
+        font-size: 18px;
+        line-height: 35px;
+        border: 1px solid transparent;
+        transition-delay: 0.4s;
+      }
+      .socialmedia a:hover{
+        transform: translate(-5px);
+        background-color: #2e2e2e;
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+      }
+      .socialmedia a:hover i{
+        color: dodgerblue;
+      }
+      .fourabove{
+        margin-top: 60px;
+      }
+      .myimage{
+        border: 2px solid #15f4ee;
+        height: 350px;
+        width:250px;
+        margin-left:200px;
+        border-radius: 390px;
+        background-image: url('img/IMG-20240703-WA0002.jpg');
+        background-repeat: no-repeat;
+        background-size:250px;
+       
+      
+      }
+      
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="lft">Prajakta tiwari</div>
+        <div class="right">
+            <ul>
+                <li ><a href="">Home</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="two">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="one">
+        <div class="lsection">Hi, My name is<span class="nidhi"> Prajakta tiwari</span> 
+            <div>and I am an Enthusiastic</div>
+            <span id="element"></span></br>
+            
+           
+        </div>
+       
+        <div class="rsection">
+       <div class="myimage"></div>
+        </div>
+        
+
+    </section>
+    <div class="container">
+      <div class="btn">Download CV</div>
+    </div>
+    <hr>
+    <section class="two">
+      <h1 id="u">ABOUT</h1>
+      <div class="do">
+        <img src="img/portfolio.webp">
+      </div>
+      <div class="ek">
+        <h1>About Me</h1>
+        <p>Hello! i'm Prajakta Tiwari, a passionate web developer with over 2 year experience on building dynamic and responsive websites. i specialized in modern web technology such as javascript and have a strong foundation in HTML and css</p>
+        <button class="red">Read More</button>
+      </div>
+    </section>
+    <hr class="divide">
+  <section class="three">
+   <h1>My Skills</h1>
+   <div class="a">
+    <h1>Front-end Development</h1>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript(ES6+)</li>
+      <li>Frameworks/Libraries:react</li>
+      <li>Responsive Design</li>
+    </ul>
+   </div>
+   <div class="b">
+    <h1>Back-end Development</h1>
+    <ul>
+      <li>PHP</li>
+      <li>Puthon(django,flask)</li>
+    </ul>
+    <h1>Database management</h1>
+    <ul>
+      <li>SOL(MySQL)</li>
+    </ul>
+   </div>
+   
+    </section>
+    <hr class="fourabove">
+    <section class="four">
+     <div class="me">
+      <div class="leftside"><h1> Get In Touch</h1></div>
+      <div class="contactinfo">
+        <div class="icongroup">
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="details">
+            <span>Phone</span>
+            <span>+91 9302004093</span>
+          </div>
+        </div>
+        <div class="icongroup">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="details">
+            <span>Email</span>
+            <span>tmidi942@gmail.com</span>
+          </div>
+        </div>
+        <div class="icongroup">
+          <div class="icon">
+            <i class="fa-solid fa-location"></i>
+          </div>
+          <div class="details">
+            <span>Location</span>
+            <span>Aura city, Barela, Jabalpur, MadhyaPradesh</span>
+          </div>
+        </div>
+      </div>
+      <div class="socialmedia">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+     </div>
+     <div class="you">
+      <div class="btn">Projects</div></br>
+      <div class="btn">veiw certificates</div></br>
+      <div class="btn">Contact</div></br>
+     </div>
+     
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#element', {
+    strings: ['<i>Web Designer</i>.', ' Web Developer.'],
+    typeSpeed: 50,
+  });
+</script>
+</body>
+</html>

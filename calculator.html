@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+          margin: 0;
+          padding:0;
+          box-sizing: border-box;
+          font-family: sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+          color: rgb(50, 24, 75);
+          background-color: rgb(191, 175, 205);
+
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            background-color: rgb(176, 110, 238);
+            padding: 15px;
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 12px #412c62 ,
+                            5px 5px 12px rgba(0, 0, 0, 0.14);
+            display: grid;
+            grid-template-columns: repeat(4,70px);                
+        }
+        input{
+            grid-column: span 4;
+            width: 260px;
+            height: 70px;
+            background-color: #ded5ee;
+            border: none;
+            box-shadow: inset -5px -5px 12px #412c62 ,
+            5px 5px 12px rgba(0, 0, 0, 0.14);
+            border-radius: 30px;
+            outline: none;
+            font-size: 50px;
+            text-align: end;
+            margin: 40px auto;
+            padding: 10px;
+           }
+         input::placeholder{
+            color: #120d1a;
+
+         }  
+         button{
+            width: 48px;
+            height: 48px;
+            background-color: #8865c1; 
+            box-shadow:  -5px -5px 12px #412c62 ,
+            5px 5px 12px rgba(9, 5, 10, 0.14);
+            border-radius: 50%;
+            border: none;
+            margin: 8px auto;
+        }
+        .eql{
+            width: 115px;
+            border-radius: 40px;
+            margin: 8px 12px;
+           
+        }
+        .btn{
+            background-color: rgb(128, 37, 202);
+        }
+        #btn{
+            background-color: rgb(128, 37, 202);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="result">
+            <button class="btn" onclick="clrs()">AC</button>
+            <button class="btn" onclick="dlt()">Del</button>
+            <button class="btn" onclick="display('%')">%</button>
+            <button class="btn" onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button class="btn" onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button class="btn" onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button class="btn" onclick="display('+')">+</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="display('.')">.</button>
+            <button id="btn"class="eql" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
